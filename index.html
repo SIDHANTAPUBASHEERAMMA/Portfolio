@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi, I'm Basheeramma</h1>
+            <h2><span>Front End Developer</span><br>From Hyderabad</h2>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/profile.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am Basheeramma Sidhantapu a creative and passionate Front-End Developer with of experience in creating responsive websites.
+                    I make sure that websites perform consistently across different browsers, providing a uniform experience for all users.
+                    I design websites that look and work seamlessly on all devices, ensuring a smooth experience for users regardless of screen size.
+                    I have a deep understanding of HTML, CSS, and JavaScript, and I love bringing designs to life using frameworks like React, Vue.js, and Bootstrap. 
+                    My goal is to ensure that every project I work on is responsive, fast, and accessible, providing users with the best experience no matter the device or platform.
+
+                    
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        
+                        <li><span>Front End Development</span><br>Front End Development</li>
+                      
+                         <ol>
+                            <li><span>Technical Skills</span></li>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>Bootstrap</li>
+                                <li>MYSQL</li>
+                                <li>Python</li>
+                            </ul>
+                         </ol>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2024(Sep-Dec) - Web Developer Internship</span><br>
+                        3 months offline full-time internship from Openventio Publishers</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024</span><br>Web Development tarining at Nirmaan Organization.</li>
+                        <li><span>2024</span><br>B-Tech from kakinada Institute of Engineering and Technology.</li>
+                        <li><span>2020</span><br>Intermediate from Pragati Junior College.</li>
+                        <li><span>2018</span><br>SSC from S.B.M.R.Govt.Girls.High.School.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Front-End Development</h2>
+                <p>Responsive websites using technologies like HTML,CSS,JavaScript and Bootstrap.</p>
+                <a href="Front-end.html">Learn more</a>
+            </div>
+            
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>App designed using technologies like HTML , CSS ,JavaScript.</p>
+                <a href="app.html">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/bg-image-1.png" width="100%" height="100%">
+                <div class="layer">
+                    <h3>An Agricultural website</h3>
+                    <p>The website that helps farmers to solve their queries virtually by connecting with through online.</p>
+                    <a href="https://sidhantapubasheeramma.github.io/Agriculture_Website/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/sg.png" width="100%" height="100%">
+                <div class="layer">
+                    <h3>Snake Game</h3>
+                    <p>The game which we use to play in mobile phone previously now can play here by using keyboard keys.</p>
+                    <a href="https://sidhantapubasheeramma.github.io/Snake-Game/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/JMEB.png" width="100%" height="100%">
+                <div class="layer">
+                    <h3>A journal Website</h3>
+                    <p>A website for Journal of Mechanical Enginnering and Biomechanics.</p>
+                    <a href="https://sidhantapubasheeramma.github.io/JMEB/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/BMI-Calc.png" width="100%" height="100%">
+                <div class="layer">
+                    <h3>BMI CALCULATOR</h3>
+                    <p>The calculator can be used to calculate Body Mass Index.</p>
+                    <a href="https://sidhantapubasheeramma.github.io/BMI-CALCULATOR/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work"></div>
+            <div class="work sec">
+                <img src="images/port.jpg" width="100%" height="100%">
+                <div class="layer">
+                    <h3>A personal Portfolio</h3>
+                    <p>A personal portfolio website.</p>
+                    <a href="https://sidhantapubasheeramma.github.io/Website_food/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work sec">
+                <img src="images/southi.jpg" width="100%" height="100%">
+                <div class="layer">
+                    <h3>SOUTHI</h3>
+                    <p>The website of a resutuarant which is having south indian food.</p>
+                    <a href="https://sidhantapubasheeramma.github.io/Website_food/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> basheerammasidhantapu@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>8639988033</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/resume_basheeramma.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="dc35b257-6066-4a70-bf70-122972dd7f47">
+
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+         <p>Copyright @ Sidhantapu Basheeramma</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
